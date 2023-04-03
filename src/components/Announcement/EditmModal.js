@@ -17,7 +17,7 @@ function EditAnnouncement({CloseModal, id}){
         { const res = "please Input a Announcement"
             setError(res)
         }else{
-        Axios.put('http://13.228.71.195:3001/Ann/update/Announcement/:id',{
+        Axios.put('http://13.229.91.120:3001/Ann/update/Announcement/:id',{
             id:id,
             newAnnouncement:upAnnouncement 
    })
@@ -30,7 +30,7 @@ function EditAnnouncement({CloseModal, id}){
             const res = "please Input a Tag"
             setError(res)
         } else {
-             Axios.put('http://13.228.71.195:3001/Ann/update/tag/:id',{
+             Axios.put('http://13.229.91.120:3001/Ann/update/tag/:id',{
             id:id,
             newTag:upTag,   
             })

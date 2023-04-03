@@ -7,7 +7,7 @@ export default function Requests() {
   const [requests, setRequests] = useState([])
   const obj = "options={display:true}"
   function fetchRequests(){
-    axios.get('http://13.228.71.195/3001/request/show').then((response)=>{
+    axios.get('http://13.229.91.120/3001/request/show').then((response)=>{
       setRequests(response.data)
     })
   }

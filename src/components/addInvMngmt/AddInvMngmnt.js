@@ -64,7 +64,7 @@ import './AddInvMngmnt.css'
       const [position, setPosition] = useState("");
     ///////
         const addToInv = () => {
-            Axios.post("http://13.228.71.195:3001/InvMngmnt/insert", {
+            Axios.post("http://13.229.91.120:3001/InvMngmnt/insert", {
               fullName: fullName,
               deviceNum: deviceNum,
               specs: specs,
@@ -102,7 +102,7 @@ import './AddInvMngmnt.css'
           const hEmail = localStorage.getItem('emailId');
           const full = ("Invmanagement added:"+fullName+"Position:"+position)
           const InventoryHistory = ()=>{
-            Axios.post("http://13.228.71.195:3001/InvHistory/insert",{
+            Axios.post("http://13.229.91.120:3001/InvHistory/insert",{
             fullName:hEmail,
             method:full,
             date:hdate,
@@ -111,7 +111,7 @@ import './AddInvMngmnt.css'
        
           useEffect(() => {
             async function fetchUser(){
-              const response = await Axios.get('http://13.228.71.195:3001/InvMngmnt/suggestion')
+              const response = await Axios.get('http://13.229.91.120:3001/InvMngmnt/suggestion')
               setUsers(response.data.result)
           }
           fetchUser()
@@ -124,7 +124,7 @@ import './AddInvMngmnt.css'
                 accept: "application/json",
               },
             };
-            const response = await Axios.get('http://13.228.71.195:3001/admin/read',options)
+            const response = await Axios.get('http://13.229.91.120:3001/admin/read',options)
             setInvDevices(response.data)
           }
           fetchDevices()

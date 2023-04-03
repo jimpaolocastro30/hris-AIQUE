@@ -21,7 +21,7 @@ const email = localStorage.getItem("emailId")
 console.log(email)
 
 const findProfile = ( )=>{
-    Axios.get('http://13.228.71.195:3001/api/EmpProf/?Emailad='+email).then((response)=>{
+    Axios.get('http://13.229.91.120:3001/api/EmpProf/?Emailad='+email).then((response)=>{
       console.log(response.data.result)
       setProfile(response.data.result)
       
@@ -30,7 +30,7 @@ const findProfile = ( )=>{
   
   const UpdateDepartment = (id)=>{
     
-    Axios.put("http://13.228.71.195:3001/api/update/department/" + id,{
+    Axios.put("http://13.229.91.120:3001/api/update/department/" + id,{
       id:id,
       newDepartment: department
 

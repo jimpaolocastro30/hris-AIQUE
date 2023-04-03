@@ -257,7 +257,7 @@ const handleLoadMore2 = () => {
   
   ////
   const updateDev = (id) => {
-    Axios.put("http://13.228.71.195:3001/admin/update/updevice/:id", {
+    Axios.put("http://13.229.91.120:3001/admin/update/updevice/:id", {
       id: id,
       newDevice: updevice,
     })
@@ -269,7 +269,7 @@ const handleLoadMore2 = () => {
       });
   };
   const updateDevHistory = async (id, dev)=>{
-    Axios.post(`http://13.228.71.195:3001/InvHistory/Updatedev/:id`,{
+    Axios.post(`http://13.229.91.120:3001/InvHistory/Updatedev/:id`,{
       devbefore:dev,
       fullName:hEmail,
       date:hdate,
@@ -282,7 +282,7 @@ const handleLoadMore2 = () => {
   }
   ////
   const updateStatus = (id) => {
-    Axios.put("http://13.228.71.195:3001/admin/update/status/:id", {
+    Axios.put("http://13.229.91.120:3001/admin/update/status/:id", {
       id: id,
       newStatus: upStatus,
     })
@@ -294,7 +294,7 @@ const handleLoadMore2 = () => {
       });
   };
   const updateStatusHistory = async (id, dev)=>{
-    Axios.post(`http://13.228.71.195:3001/InvHistory/UpdateStatus/${id}`,{
+    Axios.post(`http://13.229.91.120:3001/InvHistory/UpdateStatus/${id}`,{
       devbefore:dev,
       fullName:hEmail,
       date:hdate,
@@ -307,7 +307,7 @@ const handleLoadMore2 = () => {
   }
   ////
   const UpdateDeviceNumber = (id) => {
-    Axios.put("http://13.228.71.195:3001/admin/update/deviceNum/:id", {
+    Axios.put("http://13.229.91.120:3001/admin/update/deviceNum/:id", {
       id: id,
       newDeviceNum: upDevNum,
     })
@@ -320,7 +320,7 @@ const handleLoadMore2 = () => {
       });
   };
   const updateDevNumHistory = async (id, dev)=>{
-    Axios.post(`http://13.228.71.195:3001/InvHistory/UpdateDevNum/${id}`,{
+    Axios.post(`http://13.229.91.120:3001/InvHistory/UpdateDevNum/${id}`,{
       devbefore:dev,
       fullName:hEmail,
       date:hdate,
@@ -333,7 +333,7 @@ const handleLoadMore2 = () => {
   }
 //////
   const UpdateSpec = (id) => {
-    Axios.put("http://13.228.71.195:3001/admin/update/spec/:id", {
+    Axios.put("http://13.229.91.120:3001/admin/update/spec/:id", {
       id: id,
       newSpec: upSpec,
     })
@@ -345,7 +345,7 @@ const handleLoadMore2 = () => {
       });
   };
   const updateSpecHistory = async (id, dev)=>{
-    Axios.post(`http://13.228.71.195:3001/InvHistory/UpdateSpec/${id}`,{
+    Axios.post(`http://13.229.91.120:3001/InvHistory/UpdateSpec/${id}`,{
       devbefore:dev,
       fullName:hEmail,
       date:hdate,
@@ -358,7 +358,7 @@ const handleLoadMore2 = () => {
   }
 //////
   const UpdateProvider = (id) => {
-    Axios.put("http://13.228.71.195:3001/admin/update/provider/:id", {
+    Axios.put("http://13.229.91.120:3001/admin/update/provider/:id", {
       id: id,
       newProvider: upProvider,
     })
@@ -371,7 +371,7 @@ const handleLoadMore2 = () => {
   };
 
   const updateProviderHistory = async (id, dev)=>{
-    Axios.post(`http://13.228.71.195:3001/InvHistory/UpdateProvider/${id}`,{
+    Axios.post(`http://13.229.91.120:3001/InvHistory/UpdateProvider/${id}`,{
       devbefore:dev,
       fullName:hEmail,
       date:hdate,
@@ -384,7 +384,7 @@ const handleLoadMore2 = () => {
   }
 
   const UpdatePrice = (id) => {
-    Axios.put("http://13.228.71.195:3001/admin/update/price/;id", {
+    Axios.put("http://13.229.91.120:3001/admin/update/price/;id", {
       id: id,
       newPrice: UpPrice,
     })
@@ -396,7 +396,7 @@ const handleLoadMore2 = () => {
       });
   };
   const updatePriceHistory = async (id, dev)=>{
-    Axios.post(`http://13.228.71.195:3001/InvHistory/UpdatePrice/${id}`,{
+    Axios.post(`http://13.229.91.120:3001/InvHistory/UpdatePrice/${id}`,{
       devbefore:dev,
       fullName:hEmail,
       date:hdate,
@@ -409,7 +409,7 @@ const handleLoadMore2 = () => {
   }
 
   const UpdateDate = (id) => {
-    Axios.put("http://13.228.71.195:3001/admin/update/date/:id", {
+    Axios.put("http://13.229.91.120:3001/admin/update/date/:id", {
       id: id,
       newDate: upDate,
     })
@@ -421,7 +421,7 @@ const handleLoadMore2 = () => {
       });
   };
   const UpdateDateHistory = async (id, dev)=>{
-    Axios.post(`http://13.228.71.195:3001/InvHistory/UpdateDate/${id}`,{
+    Axios.post(`http://13.229.91.120:3001/InvHistory/UpdateDate/${id}`,{
       devbefore:dev,
       fullName:hEmail,
       date:hdate,
@@ -464,7 +464,7 @@ const [InvUpSpecs, setInvUpSpecs] = useState("");
 const [InvUpDate, setInvUpDate] = useState("");
 /////////////INV MNGMNT Update////////////////
 const updateInvDev = (id) => {
-  Axios.put("http://13.228.71.195:3001/InvMngmnt/update/Devices/:id", {
+  Axios.put("http://13.229.91.120:3001/InvMngmnt/update/Devices/:id", {
     id: id,
     newDevices:InvUpdevices,
   })
@@ -477,7 +477,7 @@ const updateInvDev = (id) => {
 };
 
 const updateInvDevHistory = async (id, dev)=>{
-  Axios.post(`http://13.228.71.195:3001/InvHistory/UpdateDevices/:id`,{
+  Axios.post(`http://13.229.91.120:3001/InvHistory/UpdateDevices/:id`,{
     devbefore:dev,
     fullName:hEmail,
     date:hdate,
@@ -490,7 +490,7 @@ const updateInvDevHistory = async (id, dev)=>{
 }
 /////////
 const updateInvFullName = (id) => {
-  Axios.put("http://13.228.71.195:3001/InvMngmnt/update/name/:id", {
+  Axios.put("http://13.229.91.120:3001/InvMngmnt/update/name/:id", {
     id: id,
     newName:InvUpFullName,
   })
@@ -503,7 +503,7 @@ const updateInvFullName = (id) => {
 };
 
 const updateInvNameHistory = async (id, dev)=>{
-  Axios.post(`http://13.228.71.195:3001/InvHistory/UpdateInvName/:id`,{
+  Axios.post(`http://13.229.91.120:3001/InvHistory/UpdateInvName/:id`,{
     devbefore:dev,
     fullName:hEmail,
     date:hdate,
@@ -516,7 +516,7 @@ const updateInvNameHistory = async (id, dev)=>{
 }
 ////////
 const updateInvEmail = (id) => {
-  Axios.put("http://13.228.71.195:3001/InvMngmnt/update/email/:id", {
+  Axios.put("http://13.229.91.120:3001/InvMngmnt/update/email/:id", {
     id: id,
     newEmail:InvUpEmail,
   })
@@ -529,7 +529,7 @@ const updateInvEmail = (id) => {
 };
 
 const updateInvEmailHistory = async (id, dev)=>{
-  Axios.post(`http://13.228.71.195:3001/InvHistory/UpdateInvEmail/:id`,{
+  Axios.post(`http://13.229.91.120:3001/InvHistory/UpdateInvEmail/:id`,{
     devbefore:dev,
     fullName:hEmail,
     date:hdate,
@@ -542,7 +542,7 @@ const updateInvEmailHistory = async (id, dev)=>{
 }
 ////////////
 const updateInvSpecs = (id) => {
-  Axios.put("http://13.228.71.195:3001/InvMngmnt/update/specs/:id", {
+  Axios.put("http://13.229.91.120:3001/InvMngmnt/update/specs/:id", {
     id: id,
     newSpecs:InvUpSpecs,
   })
@@ -554,7 +554,7 @@ const updateInvSpecs = (id) => {
     });
 };
 const updateInvSpecsHistory = async (id, dev)=>{
-  Axios.post(`http://13.228.71.195:3001/InvHistory/UpdateInvSpecs/:id`,{
+  Axios.post(`http://13.229.91.120:3001/InvHistory/UpdateInvSpecs/:id`,{
     devbefore:dev,
     fullName:hEmail,
     date:hdate,
@@ -567,7 +567,7 @@ const updateInvSpecsHistory = async (id, dev)=>{
 }
 //////////////
 const updateInvPosition = (id) => {
-  Axios.put("http://13.228.71.195:3001/InvMngmnt/update/position/:id", {
+  Axios.put("http://13.229.91.120:3001/InvMngmnt/update/position/:id", {
     id: id,
     newPosition:InvUpPosition,
   })
@@ -580,7 +580,7 @@ const updateInvPosition = (id) => {
 };
 
 const updateInvPositionHistory = async (id, dev)=>{
-  Axios.post(`http://13.228.71.195:3001/InvHistory/UpdateInvPosition/:id`,{
+  Axios.post(`http://13.229.91.120:3001/InvHistory/UpdateInvPosition/:id`,{
     devbefore:dev,
     fullName:hEmail,
     date:hdate,
@@ -593,7 +593,7 @@ const updateInvPositionHistory = async (id, dev)=>{
 }
 ///////////
 const updateInvDept = (id) => {
-  Axios.put("http://13.228.71.195:3001/InvMngmnt/update/dept/:id", {
+  Axios.put("http://13.229.91.120:3001/InvMngmnt/update/dept/:id", {
     id: id,
     newDept:InvUpDept,
   })
@@ -606,7 +606,7 @@ const updateInvDept = (id) => {
 };
 
 const updateInvDeptHistory = async (id, dev)=>{
-  Axios.post(`http://13.228.71.195:3001/InvHistory/UpdateInvDept/:id`,{
+  Axios.post(`http://13.229.91.120:3001/InvHistory/UpdateInvDept/:id`,{
     devbefore:dev,
     fullName:hEmail,
     date:hdate,
@@ -619,7 +619,7 @@ const updateInvDeptHistory = async (id, dev)=>{
 }
 //////////
 const updateInvDevNums = (id) => {
-  Axios.put("http://13.228.71.195:3001/InvMngmnt/update/deviceNums/:id", {
+  Axios.put("http://13.229.91.120:3001/InvMngmnt/update/deviceNums/:id", {
     id: id,
     newDeviceNum:InvUpDeviceNums,
   })
@@ -632,7 +632,7 @@ const updateInvDevNums = (id) => {
 };
 
 const updateInvDevNumsHistory = async (id, dev)=>{
-  Axios.post(`http://13.228.71.195:3001/InvHistory/UpdateInvDevNums/:id`,{
+  Axios.post(`http://13.229.91.120:3001/InvHistory/UpdateInvDevNums/:id`,{
     devbefore:dev,
     fullName:hEmail,
     date:hdate,
@@ -645,7 +645,7 @@ const updateInvDevNumsHistory = async (id, dev)=>{
 }
 //////////////
 const updateInvDate = (id) => {
-  Axios.put("http://13.228.71.195:3001/InvMngmnt/update/date/:id", {
+  Axios.put("http://13.229.91.120:3001/InvMngmnt/update/date/:id", {
     id: id,
     newDate:InvUpDate,
   })
@@ -658,7 +658,7 @@ const updateInvDate = (id) => {
 };
 
 const updateInvDateHistory = async (id, dev)=>{
-  Axios.post(`http://13.228.71.195:3001/InvHistory/UpdateInvDate/:id`,{
+  Axios.post(`http://13.229.91.120:3001/InvHistory/UpdateInvDate/:id`,{
     devbefore:dev,
     fullName:hEmail,
     date:hdate,
@@ -703,7 +703,7 @@ console.log(hMethod)
 const InventoryDelete = async (id)=>{
   
   try {
-  await Axios.post(`http://13.228.71.195:3001/admin/delete/${id}`,{
+  await Axios.post(`http://13.229.91.120:3001/admin/delete/${id}`,{
         fullName:hEmail,
         id:id,
         date:hdate,
@@ -716,7 +716,7 @@ const InventoryDelete = async (id)=>{
 const InventoryMngmntDelete = async (id)=>{
   
   try {
-  await Axios.post(`http://13.228.71.195:3001/InvMngmnt/delete/${id}`,{
+  await Axios.post(`http://13.229.91.120:3001/InvMngmnt/delete/${id}`,{
         fullName:hEmail,
         id:id,
         date:hdate,
@@ -749,44 +749,44 @@ const InventoryMngmntDelete = async (id)=>{
     };
     
 
-    Axios.get("http://13.228.71.195:3001/admin/read/", options).then((response) => {
+    Axios.get("http://13.229.91.120:3001/admin/read/", options).then((response) => {
       setInventoryList(response.data);
       ///////////////////
 
-      Axios.get("http://13.228.71.195:3001/admin/Status?Status=Reserved", options).then((response) => {
+      Axios.get("http://13.229.91.120:3001/admin/Status?Status=Reserved", options).then((response) => {
       setResCount(response.data.result)
     })
-    Axios.get("http://13.228.71.195:3001/admin/Status?Status=Used", options).then((response) => {
+    Axios.get("http://13.229.91.120:3001/admin/Status?Status=Used", options).then((response) => {
       setUsedCount(response.data.result)
     })
-    Axios.get("http://13.228.71.195:3001/admin/Status?Status=New", options).then((response) => {
+    Axios.get("http://13.229.91.120:3001/admin/Status?Status=New", options).then((response) => {
       setNewCount(response.data.result)
     })
-    Axios.get("http://13.228.71.195:3001/admin/Status?Status=To Repair", options).then((response) => {
+    Axios.get("http://13.229.91.120:3001/admin/Status?Status=To Repair", options).then((response) => {
       setToRepCount(response.data.result)
     })
-    Axios.get("http://13.228.71.195:3001/admin/Status?Status=Decomisioned", options).then((response) => {
+    Axios.get("http://13.229.91.120:3001/admin/Status?Status=Decomisioned", options).then((response) => {
       setDecomCount(response.data.result)
     })
 
   
       ///////////////////
-      Axios.get("http://13.228.71.195:3001/admin/stock?device=Laptop").then(
+      Axios.get("http://13.229.91.120:3001/admin/stock?device=Laptop").then(
         (response) => {
           setLaptopStocks(response.data.result);
         }
       );
-      Axios.get("http://13.228.71.195:3001/admin/stock?device=Mouse").then(
+      Axios.get("http://13.229.91.120:3001/admin/stock?device=Mouse").then(
         (response) => {
           setMouseStocks(response.data.result);
         }
       );
-      Axios.get("http://13.228.71.195:3001/admin/stock?device=Monitor").then(
+      Axios.get("http://13.229.91.120:3001/admin/stock?device=Monitor").then(
         (response) => {
           setMonitorStocks(response.data.result);
         }
       );
-      Axios.get("http://13.228.71.195:3001/admin/stock?device=Keyboard").then(
+      Axios.get("http://13.229.91.120:3001/admin/stock?device=Keyboard").then(
         (response) => {
           setKeyboardStocks(response.data.result);
         }
@@ -795,7 +795,7 @@ const InventoryMngmntDelete = async (id)=>{
     )
   };
   const showDataInv = ()=>{
-     Axios.get("http://13.228.71.195:3001/InvMngmnt/read/").then((response) => {
+     Axios.get("http://13.229.91.120:3001/InvMngmnt/read/").then((response) => {
       console.log(response)
       setInvMngmnt(response.data); 
     })
@@ -807,7 +807,7 @@ const InventoryMngmntDelete = async (id)=>{
   const deleteInvMngmt = (id) => {
     
     console.log(user);
-    Axios.delete(`http://13.228.71.195:3001/InvMngmnt/delete/${id}`,).then(
+    Axios.delete(`http://13.229.91.120:3001/InvMngmnt/delete/${id}`,).then(
       (res) => {
         swal
           .fire({
@@ -914,7 +914,7 @@ const InventoryMngmntDelete = async (id)=>{
         accept: "application/json",
       },
     };
-    Axios.delete(`http://13.228.71.195:3001/admin/delete/${id}`, options).then(
+    Axios.delete(`http://13.229.91.120:3001/admin/delete/${id}`, options).then(
       (res) => {
         swal
           .fire({
@@ -938,7 +938,7 @@ const InventoryMngmntDelete = async (id)=>{
   {
     /*/////////for Backend Searching of device Number Only//////////////
     const findDevNum = ( )=>{
-      Axios.get("http://13.228.71.195:3001/read/deviceNum?deviceNum="+search).then((response)=>{
+      Axios.get("http://13.229.91.120:3001/read/deviceNum?deviceNum="+search).then((response)=>{
         console.log(response.data.result)
         setSearchList(response.data.result)
         

@@ -37,7 +37,7 @@ const UserCheck=()=>{
 const [equipment, setEquipment] = useState(false)
 const [getEquipment, setGetEquipment] = useState([])
 function getEquip(){
-  axios.get("http://13.228.71.195:3001/api/getEquip?email="+Emailad).then((response)=>{
+  axios.get("http://13.229.91.120:3001/api/getEquip?email="+Emailad).then((response)=>{
   setGetEquipment(response.data)
   })
 }
@@ -59,7 +59,7 @@ function getEquip(){
 /// axios update///
  const UpdateDepartment = (id)=>{
    
-   Axios.put("http://13.228.71.195:3001/api/update/department/:id",{
+   Axios.put("http://13.229.91.120:3001/api/update/department/:id",{
      id:id,
      newDepartment : department
     
@@ -67,7 +67,7 @@ function getEquip(){
      findProfile()
    })}
   async function UpdateDeptHistory(id, dev){
-    Axios.post(`http://13.228.71.195:3001/UserMngmnt/updateDept/:id`,{
+    Axios.post(`http://13.229.91.120:3001/UserMngmnt/updateDept/:id`,{
       devbefore:dev,
       fullName:hEmail,
       date:hdate,
@@ -80,7 +80,7 @@ function getEquip(){
 //////
    const UpdatePosition = (id)=>{
    
-     Axios.put("http://13.228.71.195:3001/api/update/position/:id",{
+     Axios.put("http://13.229.91.120:3001/api/update/position/:id",{
        id:id,
        newPosition : position
       
@@ -89,7 +89,7 @@ function getEquip(){
      })}
 
      async function UpdatePositionHistory(id, dev){
-      Axios.post(`http://13.228.71.195:3001/UserMngmnt/updatePosition/:id`,{
+      Axios.post(`http://13.229.91.120:3001/UserMngmnt/updatePosition/:id`,{
         devbefore:dev,
         fullName:hEmail,
         date:hdate,
@@ -102,7 +102,7 @@ function getEquip(){
   ///////
      const UpdateImmSuperior = (id)=>{
    
-       Axios.put("http://13.228.71.195:3001/api/update/immSuperior/:id",{
+       Axios.put("http://13.229.91.120:3001/api/update/immSuperior/:id",{
          id:id,
          newSuperior : immSuperior
         
@@ -111,7 +111,7 @@ function getEquip(){
        })}
 
        async function UpdateImmSuperiorHistory(id, dev){
-        Axios.post(`http://13.228.71.195:3001/UserMngmnt/updateSuperior/:id`,{
+        Axios.post(`http://13.229.91.120:3001/UserMngmnt/updateSuperior/:id`,{
           devbefore:dev,
           fullName:hEmail,
           date:hdate,
@@ -125,7 +125,7 @@ function getEquip(){
  
        const EmPerToContact = (id)=>{
    
-         Axios.put("http://13.228.71.195:3001/api/update/EmPerToContact/:id",{
+         Axios.put("http://13.229.91.120:3001/api/update/EmPerToContact/:id",{
            id:id,
            newPerContact : EmPerContact
           
@@ -133,7 +133,7 @@ function getEquip(){
            findProfile()
          })}
          async function UpdateEmPerToContactHistory(id, dev){
-          Axios.post(`http://13.228.71.195:3001/UserMngmnt/updateEmPerToContact/:id`,{
+          Axios.post(`http://13.229.91.120:3001/UserMngmnt/updateEmPerToContact/:id`,{
             devbefore:dev,
             fullName:hEmail,
             date:hdate,
@@ -146,7 +146,7 @@ function getEquip(){
         /////////////
          const UpdateSSS = (id)=>{
    
-           Axios.put("http://13.228.71.195:3001/api/update/SSS/:id",{
+           Axios.put("http://13.229.91.120:3001/api/update/SSS/:id",{
              id:id,
              newSSS : sSS
             
@@ -155,7 +155,7 @@ function getEquip(){
            })}
 
            async function UpdateSSSHistory(id, dev){
-            Axios.post(`http://13.228.71.195:3001/UserMngmnt/updateSSS/:id`,{
+            Axios.post(`http://13.229.91.120:3001/UserMngmnt/updateSSS/:id`,{
               devbefore:dev,
               fullName:hEmail,
               date:hdate,
@@ -168,7 +168,7 @@ function getEquip(){
           ///////////
            const UpdatePagIbig = (id)=>{
    
-             Axios.put("http://13.228.71.195:3001/api/update/pagIbig/:id",{
+             Axios.put("http://13.229.91.120:3001/api/update/pagIbig/:id",{
                id:id,
                newPagIbig : pagIbig
               
@@ -177,7 +177,7 @@ function getEquip(){
              })} 
        
              async function UpdatePagIbigHistory(id, dev){
-              Axios.post(`http://13.228.71.195:3001/UserMngmnt/updatePagibig/:id`,{
+              Axios.post(`http://13.229.91.120:3001/UserMngmnt/updatePagibig/:id`,{
                 devbefore:dev,
                 fullName:hEmail,
                 date:hdate,
@@ -190,7 +190,7 @@ function getEquip(){
             /////////
              const UpdateTinID = (id)=>{
    
-               Axios.put("http://13.228.71.195:3001/api/update/tinId/:id",{
+               Axios.put("http://13.229.91.120:3001/api/update/tinId/:id",{
                  id:id,
                  newTinID : tinId
                 
@@ -199,7 +199,7 @@ function getEquip(){
                })}  
               
                async function UpdateTinIDHistory(id, dev){
-                Axios.post(`http://13.228.71.195:3001/UserMngmnt/updateTinID/:id`,{
+                Axios.post(`http://13.229.91.120:3001/UserMngmnt/updateTinID/:id`,{
                   devbefore:dev,
                   fullName:hEmail,
                   date:hdate,
@@ -212,7 +212,7 @@ function getEquip(){
             //////////
                const UpdateEmpStatus = (id)=>{
    
-                Axios.put("http://13.228.71.195:3001/api/update/empStatus/:id",{
+                Axios.put("http://13.229.91.120:3001/api/update/empStatus/:id",{
                   id:id,
                   newEmpStatus : Status
                  
@@ -221,7 +221,7 @@ function getEquip(){
                 })}   
 
                 async function UpdateStatusHistory(id, dev){
-                  Axios.post(`http://13.228.71.195:3001/UserMngmnt/updateStatus/:id`,{
+                  Axios.post(`http://13.229.91.120:3001/UserMngmnt/updateStatus/:id`,{
                     devbefore:dev,
                     fullName:hEmail,
                     date:hdate,
@@ -237,7 +237,7 @@ const Emailad = location.state
 
 const [showSalary, setShowSalary]=useState(false)
   const findProfile = ( )=>{
-    Axios.get('http://13.228.71.195:3001/api/EmpProf/?Emailad='+Emailad).then((response)=>{
+    Axios.get('http://13.229.91.120:3001/api/EmpProf/?Emailad='+Emailad).then((response)=>{
       console.log(response.data.result)
       setProfile(response.data.result)
       

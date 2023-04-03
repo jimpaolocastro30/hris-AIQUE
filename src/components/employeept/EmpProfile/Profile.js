@@ -44,7 +44,7 @@ const [equipment, setEquipment] = useState(false)
 /// axios update///
   const UpdateDepartment = (id)=>{
     
-    Axios.put("http://13.228.71.195:3001/api/update/department/:id",{
+    Axios.put("http://13.229.91.120:3001/api/update/department/:id",{
       id:id,
       newDepartment : department
      
@@ -54,7 +54,7 @@ const [equipment, setEquipment] = useState(false)
 
     const UpdatePosition = (id)=>{
     
-      Axios.put("http://13.228.71.195:3001/api/update/position/:id",{
+      Axios.put("http://13.229.91.120:3001/api/update/position/:id",{
         id:id,
         newPosition : position
        
@@ -64,7 +64,7 @@ const [equipment, setEquipment] = useState(false)
 
       const UpdateImmSuperior = (id)=>{
     
-        Axios.put("http://13.228.71.195:3001/api/update/immSuperior/:id",{
+        Axios.put("http://13.229.91.120:3001/api/update/immSuperior/:id",{
           id:id,
           newSuperior : immSuperior
          
@@ -74,7 +74,7 @@ const [equipment, setEquipment] = useState(false)
   
         const EmPerToContact = (id)=>{
     
-          Axios.put("http://13.228.71.195:3001/api/update/EmPerToContact/:id",{
+          Axios.put("http://13.229.91.120:3001/api/update/EmPerToContact/:id",{
             id:id,
             newPerContact : EmPerContact
            
@@ -84,7 +84,7 @@ const [equipment, setEquipment] = useState(false)
 
           const UpdateSSS = (id)=>{
     
-            Axios.put("http://13.228.71.195:3001/api/update/SSS/:id",{
+            Axios.put("http://13.229.91.120:3001/api/update/SSS/:id",{
               id:id,
               newSSS : sSS
              
@@ -93,7 +93,7 @@ const [equipment, setEquipment] = useState(false)
             })}
             const UpdatePagIbig = (id)=>{
     
-              Axios.put("http://13.228.71.195:3001/api/update/pagIbig/:id",{
+              Axios.put("http://13.229.91.120:3001/api/update/pagIbig/:id",{
                 id:id,
                 newPagIbig : pagIbig
                
@@ -103,7 +103,7 @@ const [equipment, setEquipment] = useState(false)
         
               const UpdateTinID = (id)=>{
     
-                Axios.put("http://13.228.71.195:3001/api/update/tinId/:id",{
+                Axios.put("http://13.229.91.120:3001/api/update/tinId/:id",{
                   id:id,
                   newTinID : tinId
                  
@@ -120,7 +120,7 @@ const [equipment, setEquipment] = useState(false)
   console.log(email)
 
   const findProfile = ( )=>{
-    Axios.get('http://13.228.71.195:3001/api/EmpProf/?Emailad='+email).then((response)=>{
+    Axios.get('http://13.229.91.120:3001/api/EmpProf/?Emailad='+email).then((response)=>{
       console.log(response.data.result)
       setProfile(response.data.result)
     })

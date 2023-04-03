@@ -10,7 +10,7 @@ function MouseCat(){
 
   useEffect(()=> {
      
-    Axios.get("http://13.228.71.195:3001/read/device?device=Mouse").then((response)=> {
+    Axios.get("http://13.229.91.120:3001/read/device?device=Mouse").then((response)=> {
      /*let final = response.data
       setdevlap(final);
      console.log(response)*/

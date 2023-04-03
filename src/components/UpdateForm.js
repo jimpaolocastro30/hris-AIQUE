@@ -36,7 +36,7 @@ function UpdateForm(){
   let dateData = ""
   //get one data axios
   const fetchData = () => {
-    Axios.get(`http://13.228.71.195:3001/admin/read/device/${id}`).then((response)=> {
+    Axios.get(`http://13.229.91.120:3001/admin/read/device/${id}`).then((response)=> {
       const resp = response.data.idresult
 
       //stringification of the object data
@@ -64,7 +64,7 @@ function UpdateForm(){
   // update form Axios
   const UpdateDevice = (id)=>{
     
-    axios.put("http://13.228.71.195:3001/admin/update/updevice/" + id,{
+    axios.put("http://13.229.91.120:3001/admin/update/updevice/" + id,{
       id:id,
       newDevice: newDevice
      
@@ -76,7 +76,7 @@ function UpdateForm(){
   }
   const UpdateStatus = (id)=>{
     
-    axios.put("http://13.228.71.195:3001/admin/update/status/" + id,{
+    axios.put("http://13.229.91.120:3001/admin/update/status/" + id,{
       id: id,
       newStatus: dataStatus
      
@@ -88,7 +88,7 @@ function UpdateForm(){
   }
 
   const UpdateDeviceNumber =(id) =>{
-    axios.put("http://13.228.71.195:3001/admin/update/deviceNum/"+ id,{
+    axios.put("http://13.229.91.120:3001/admin/update/deviceNum/"+ id,{
       id: id,
       newDeviceNum: dataDeviceNum
     }).then(res =>{
@@ -100,7 +100,7 @@ function UpdateForm(){
   }
 
   const UpdateProvider =(id) =>{
-    axios.put("http://13.228.71.195:3001/admin/update/provider/"+ id,{
+    axios.put("http://13.229.91.120:3001/admin/update/provider/"+ id,{
       id: id,
       newProvider: dataProvider
     }).then(res =>{
@@ -112,7 +112,7 @@ function UpdateForm(){
   }
 
   const UpdatePrice =(id) =>{
-    axios.put("http://13.228.71.195:3001/admin/update/price/"+id,{
+    axios.put("http://13.229.91.120:3001/admin/update/price/"+id,{
       id: id,
       newPrice : dataPrice
     }).then(res =>{
@@ -123,7 +123,7 @@ function UpdateForm(){
   }
 
   const UpdateSpec =(id) =>{
-    axios.put("http://13.228.71.195:3001/adminupdate/spec/"+id,{
+    axios.put("http://13.229.91.120:3001/adminupdate/spec/"+id,{
       id: id,
       newSpec : dataSpec
     }).then(res =>{
@@ -134,7 +134,7 @@ function UpdateForm(){
   }
   
   const UpdateDate =(id) =>{
-    axios.put("http://13.228.71.195:3001/admin/update/date/"+id,{
+    axios.put("http://13.229.91.120:3001/admin/update/date/"+id,{
       id: id,
       newDate : dataDate
     }).then(res =>{

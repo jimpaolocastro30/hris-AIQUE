@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react'
 const InvHistory =()=>{
     const [history, setHistory] = useState([])
     const getHistory=()=>{
-        Axios.get("http://13.228.71.195:3001/InvHistory/read").then((response)=>{
+        Axios.get("http://13.229.91.120:3001/InvHistory/read").then((response)=>{
             setHistory(response.data)
         })
     }
