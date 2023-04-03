@@ -80,7 +80,7 @@ const [profile, setProfile] = useState([])
 
 
 const findProfile = ( )=>{
-    Axios.get('http://localhost:3001/api/EmpProf/?Emailad='+email).then((response)=>{
+    Axios.get('http://13.228.71.195:3001/api/EmpProf/?Emailad='+email).then((response)=>{
       console.log(response.data.result)
       setProfile(response.data.result)
       setRole(response.data.result[0].role)
@@ -88,7 +88,7 @@ const findProfile = ( )=>{
     })
   }
 const fetchAnnouncement = ()=>{
-Axios.get('http://localhost:3001/Ann/Announcement').then((response)=>{
+Axios.get('http://13.228.71.195:3001/Ann/Announcement').then((response)=>{
     setAnnouncementList(response.data)
     console.log(response.data)
 })
@@ -102,7 +102,7 @@ const [announcementList, setAnnouncementList] = useState([''])
 const addAnnouncement = () => {
     try{
 
-      Axios.post("http://localhost:3001/Ann/insert", {
+      Axios.post("http://13.228.71.195:3001/Ann/insert", {
         user:emailId,
         date:date,
         tag:tag,
@@ -117,7 +117,7 @@ const addAnnouncement = () => {
 
 ////////////Delete Announcement//////////////
 async function DeleteAnnouncement(id){
-    Axios.delete(`http://localhost:3001/Ann/delete/${id}`,{
+    Axios.delete(`http://13.228.71.195:3001/Ann/delete/${id}`,{
         id:id
     }).then(res=>{
         Swal.fire({

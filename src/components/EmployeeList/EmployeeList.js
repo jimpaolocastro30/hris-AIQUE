@@ -23,7 +23,7 @@ const EmployeeList=()=>{
   const [role,setRole]=useState([])
   const email = localStorage.getItem('emailId')
   const findProfile = ( )=>{
-    Axios.get('http://localhost:3001/api/EmpProf/?Emailad='+email).then((response)=>{
+    Axios.get('http://13.228.71.195:3001/api/EmpProf/?Emailad='+email).then((response)=>{
       console.log(response.data)
       setRole(response.data.result)
       
@@ -144,7 +144,7 @@ const EmployeeList=()=>{
           }
         }
          
-        Axios.get("http://localhost:3001/api/read/", options).then((response)=> {
+        Axios.get("http://13.228.71.195:3001/api/read/", options).then((response)=> {
            setEmployeeList(response.data);
            console.log('hajsdksa')
            
@@ -157,7 +157,7 @@ const EmployeeList=()=>{
     const[showHistory, setShowHistory]= useState(false)   
     //////////////////////////////////////
      async function deleteEmployee (id){
-      Axios.delete(`http://localhost:3001/api/delete/${id}`,{
+      Axios.delete(`http://13.228.71.195:3001/api/delete/${id}`,{
         id:id
       }).then(res=>{
         Swal.fire({
@@ -168,7 +168,7 @@ const EmployeeList=()=>{
     }
 
    async function EmployeeDeleteHistory(id, dev, devmail){
-    Axios.post(`http://localhost:3001/UserMngmnt/delete/${id}`,{
+    Axios.post(`http://13.228.71.195:3001/UserMngmnt/delete/${id}`,{
     devbefore:devmail,
     fullName:email,
     date:hdate,

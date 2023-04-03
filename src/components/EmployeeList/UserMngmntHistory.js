@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react'
 const UserMngmntHistory =()=>{
    const [history, setHistory] = useState([])
    const getHistory=()=>{
-       Axios.get("http://localhost:3001/UserMngmnt/read").then((response)=>{
+       Axios.get("http://13.228.71.195:3001/UserMngmnt/read").then((response)=>{
            setHistory(response.data)
        })
    }

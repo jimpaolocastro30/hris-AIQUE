@@ -16,7 +16,7 @@ export default function ForgotPage() {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = `http://localhost:3001/request/forgotpass`;
+			const url = `http://13.228.71.195:3001/request/forgotpass`;
 			const { data } = await axios.post(url, { email:Emailad, request:request,
             date:date
                 });

@@ -346,7 +346,7 @@ const [refunds, setRefunds] = useState('')
 
 ////////////SSS get/////////////////
 function VlCred(){
-    axios.get('http://localhost:3001/Payroll/VlCred/?employeeNum='+employeeNum,{
+    axios.get('http://13.228.71.195:3001/Payroll/VlCred/?employeeNum='+employeeNum,{
     }).then((response)=>{
         console.log(response.data)
         setVLCreditPast(response.data.result.vlCredit)
@@ -360,7 +360,7 @@ function VlCred(){
 
 useEffect(() => {
         async function fetchUser(){
-          const response = await Axios.get('http://localhost:3001/InvMngmnt/suggestion')
+          const response = await Axios.get('http://13.228.71.195:3001/InvMngmnt/suggestion')
           setUsers(response.data.result)
       }
       fetchUser()
@@ -401,7 +401,7 @@ useEffect(()=>{
   
 })
 function addPayroll(){
-    Axios.post("http://localhost:3001/Payroll/insert",{
+    Axios.post("http://13.228.71.195:3001/Payroll/insert",{
         email:email,
         employee: employeeName,
         employeeNum:employeeNum,

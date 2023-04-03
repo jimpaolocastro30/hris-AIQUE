@@ -65,7 +65,7 @@ import icon from '../Icon/AIQue Logo.png'
   function MyDocument ({employeeNum}){
   const[payMap, setPayMap] = useState([])
      function payslips(){
-     axios.get('http://localhost:3001/Payroll/read?employeeNum='+employeeNum,{
+     axios.get('http://13.228.71.195:3001/Payroll/read?employeeNum='+employeeNum,{
       }).then(response=>{
         console.log(response.data)
         setPayMap(response.data.result)

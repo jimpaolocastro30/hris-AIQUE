@@ -24,7 +24,7 @@ const [error, setError] = useState([])
     const addToList = () => {
       try{
         InventoryHistory()
-        Axios.post("http://localhost:3001/admin/insert", {
+        Axios.post("http://13.228.71.195:3001/admin/insert", {
           device: device,
           deviceNum: deviceNum,
           spec: spec,
@@ -65,7 +65,7 @@ const [error, setError] = useState([])
       
       console.log(full)
       const InventoryHistory = ()=>{
-          Axios.post("http://localhost:3001/InvHistory/insert",{
+          Axios.post("http://13.228.71.195:3001/InvHistory/insert",{
           fullName:hEmail,
           method:full,
           date:hdate,

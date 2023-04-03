@@ -8,7 +8,7 @@ export default function ResetPage() {
 	const [msg, setMsg] = useState("");
 	const [error, setError] = useState("");
 	const param = useParams();
-	const url = `http://localhost:3001/signIn/forgotPass/${param.id}/${param.token}`;
+	const url = `http://13.228.71.195:3001/signIn/forgotPass/${param.id}/${param.token}`;
 
 	useEffect(() => {
 		const verifyUrl = async () => {

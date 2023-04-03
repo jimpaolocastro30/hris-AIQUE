@@ -62,7 +62,7 @@ const AdminAddUser=()=>{
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "http://localhost:3001/PreReg";
+			const url = "http://13.228.71.195:3001/PreReg";
 			const { data: res } = await axios.post(url, data);
 			console.log(res.message);
             UserMngmntHistoryget()
@@ -91,7 +91,7 @@ const AdminAddUser=()=>{
     
     console.log(full)
     const UserMngmntHistoryget = ()=>{
-        axios.post("http://localhost:3001/UserMngmnt/insert",{
+        axios.post("http://13.228.71.195:3001/UserMngmnt/insert",{
         fullName:hEmail,
         method:full,
         date:hdate,

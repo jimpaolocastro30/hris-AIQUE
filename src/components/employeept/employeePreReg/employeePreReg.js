@@ -43,7 +43,7 @@ const PreReg = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "http://localhost:3001/PreReg";
+			const url = "http://13.228.71.195:3001/PreReg";
 			const { data: res } = await axios.post(url, data);
 			navigate("/");
 			console.log(res.message);

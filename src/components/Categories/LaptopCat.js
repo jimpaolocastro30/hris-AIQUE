@@ -8,12 +8,12 @@ function LaptopCat(){
   
   const [devLap, setdevlap] = useState([])
   const deleteInvItem = (id) => {
-    Axios.delete(`http://localhost:3001/delete/${id}`,{
+    Axios.delete(`http://13.228.71.195:3001/delete/${id}`,{
     
   })}
    
   const fetchData=()=>{
-    Axios.get("http://localhost:3001/read/device?device=Laptop").then((response)=> {
+    Axios.get("http://13.228.71.195:3001/read/device?device=Laptop").then((response)=> {
      /*let final = response.data
       setdevlap(final);
      console.log(response)*/

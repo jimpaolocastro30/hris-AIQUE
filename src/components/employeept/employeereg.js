@@ -23,7 +23,7 @@ const[empStatus, setEmpStatus] = useState ("")
 
 
 const addToReg = () => 
-Axios.post("http://localhost:3001/employeeReg/insert",{
+Axios.post("http://13.228.71.195:3001/employeeReg/insert",{
   //FirstName:FirstName,
   //MiddleName:MiddleName,
   //LastName:LastName,

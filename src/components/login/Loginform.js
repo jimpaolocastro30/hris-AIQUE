@@ -27,7 +27,7 @@ function LoginForm () {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "http://localhost:3001/signIn";
+			const url = "http://13.228.71.195:3001/signIn";
 			const { data: res } = await Axios.post(url, data);
 			localStorage.setItem('Bearer', res.data);
 			localStorage.setItem('emailId',emailId)

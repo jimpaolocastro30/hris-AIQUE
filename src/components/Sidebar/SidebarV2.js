@@ -15,7 +15,7 @@ const [isOpen, setIsOpen] = useState(true)
 const email = localStorage.getItem("emailId")
 localStorage.setItem('role',role)
     const findProfile = ( )=>{
-        Axios.get('http://localhost:3001/api/EmpProf/?Emailad='+email).then((response)=>{
+        Axios.get('http://13.228.71.195:3001/api/EmpProf/?Emailad='+email).then((response)=>{
           setUser(response.data.result)
           //setRole(response.data.role)
           setRole(response.data.result[0].role)
