@@ -1,0 +1,88 @@
+.background{
+    animation: fade-in 0.2s;
+    background-color: rgba(0, 0, 0, 0.2);
+    width:100vw;
+    height: 100vh;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    
+}
+
+.Sidelinks:hover{
+    background-color: aqua;
+    zoom: 105%;
+}
+.Sidelinks{
+    transition: background-color 500ms ease;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: start;
+    transition: ease-in-out 300ms;
+    margin-top: 10px;
+}
+.Sidelinksactive{
+    background-color: aqua;
+}
+.open-side{
+    cursor: pointer;
+}
+.tooltip2{
+    scale: 0;
+    display: none;
+
+}
+.tooltip1{
+    position: absolute;
+    left: 80px;
+    border-radius: 15px;
+    scale: 0;
+    display: flex;
+    
+}
+  
+.Sidelinks:hover .tooltip1{
+    position: absolute;
+    background-position: 100;
+    height: auto;
+    scale: 1;
+    transition: ease-in-out 200ms;
+    color: black;
+
+}
+.open-close{
+    margin-top: 15px;
+}
+.side-links{
+    margin-top: 25px;
+}
+.empup{
+    height: 150px;
+}
+.icon-out:hover{
+color: blue;
+transition:ease-in-out 200ms;
+zoom: 115%;
+}
+
+.aicon{
+    width: 25px;
+    margin-top: 15px;
+}
+.aicon:hover{
+    transition: ease-in-out 200ms;
+    width: 45px;
+}
+.title:hover .tooltip1{
+    position: absolute;
+    background-position: 100;
+    height: auto;
+    scale: 1;
+    transition: ease-in-out 200ms;
+    color: black;
+    top: 45px;
+    font-family: poppins;
+}
+

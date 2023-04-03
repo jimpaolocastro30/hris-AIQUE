@@ -1,0 +1,29 @@
+.select{
+background-color: #bbdefb;
+border-radius: 5px;
+outline: 5px;
+width: 94%;
+cursor: pointer;
+position: absolute;
+z-index: 999;
+}
+.selection{
+    padding: 3px;
+}
+:hover.selection{
+    background-color: #90caf9;
+}
+
+.device-select{
+    background-color: #bbdefb;
+    border-radius: 5px;
+    outline: 5px;
+    width: 94%;
+    cursor: pointer;
+    position: absolute;
+    z-index: 999;
+}
+
+:hover.inv-selection{
+    background-color: #90caf9;
+}

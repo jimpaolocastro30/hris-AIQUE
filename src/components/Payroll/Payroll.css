@@ -1,0 +1,14 @@
+.select{
+    background-color: #bbdefb;
+    border-radius: 5px;
+    outline: 5px;
+    width: 94%;
+    cursor: pointer;
+    position: absolute;
+    z-index: 999;
+    align-items: start;
+    }
+
+:hover.select-items{
+    background-color: #90caf9;
+}
